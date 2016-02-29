@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/detail_explain_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"  >
+
+        <ImageButton
+            android:id="@+id/detail_explain_RebackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/detail_explain_close" />
+
+        <ImageView
+            android:id="@+id/detail_explain_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_below="@+id/detail_explain_RebackButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/explain_img" />
+        
+        <TextView
+            android:id="@+id/detail_explain_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_below="@+id/detail_explain_RebackButton"
+            android:layout_toRightOf="@+id/detail_explain_imageView"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:textColor="@color/orchid"
+            android:textSize="24dip"
+            android:text="说明" />
+        
+        <ImageView
+            android:id="@+id/detail_explain_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/detail_explain_title_name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:src="@color/black" />
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/detail_explain_ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dip"
+        android:layout_below="@+id/detail_explain_title_layout" >
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/detail_explain_ScrollView_textOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/black"
+            android:textSize="20dip"
+            android:text="@string/explain" />
+          
+      </LinearLayout>
+    </ScrollView>
+
+    
+
+</RelativeLayout>

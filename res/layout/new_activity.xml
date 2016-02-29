@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/new_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_back" >
+
+        <TextView
+            android:id="@+id/new_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="数据江北"
+            android:textColor="@color/white"
+            android:textSize="30dip" />
+
+        <ImageButton
+            android:id="@+id/new_title_SearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/search_button" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/new_title_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/new_title_layout"
+        android:text="数据时间：2015年1-11月"
+        android:textColor="@color/orchid"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/new_title_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/new_title_textView1"  
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:text="指标名称 "
+        android:textColor="@color/black" />
+    
+
+    <TextView
+         android:id="@+id/new_title_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/new_title_textView3"
+        android:layout_alignParentRight="true"    
+        android:text="同比增长（%）" 
+        android:textColor="@color/black"/>
+    
+    <ListView
+        android:id="@+id/new_title_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_title_textView2"
+        android:layout_marginTop="14dp"
+        android:background="@color/white"
+        android:divider="#00000000"
+        android:dividerHeight="10dip" />
+
+    <TextView
+        android:id="@+id/new_title_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/new_title_listView"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/new_title_textView4"
+        android:text="绝对量"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

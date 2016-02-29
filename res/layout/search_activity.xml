@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/search_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_back"
+         >
+         <TextView
+        android:id="@+id/search_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="数据江北"
+        android:textColor="@color/white"
+        android:textSize="30dip" />
+         
+         <!-- <ImageButton
+             android:id="@+id/search_title_SearchButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="20dip"
+             android:background="@drawable/search_button" / >-->
+
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/serach_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_below="@+id/search_title_layout"
+        android:background="@color/lightgray"
+        android:layout_marginTop="5dip"  >
+        
+        <EditText
+        android:id="@+id/search_title_editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:ems="10" 
+        android:hint="生产"/>
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_title_listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_below="@+id/serach_edit_layout" >
+
+    </ListView>
+
+    
+
+</RelativeLayout>

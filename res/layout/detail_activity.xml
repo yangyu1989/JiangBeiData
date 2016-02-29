@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightgray" >
+
+    <RelativeLayout
+        android:id="@+id/detail_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_back" >
+
+        <ImageButton
+            android:id="@+id/detail_title_RebackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/reback" />
+
+        <TextView
+            android:id="@+id/detail_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="数据江北"
+            android:textColor="@color/white"
+            android:textSize="30dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_first_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detail_title_layout" >
+
+        <TextView
+            android:id="@+id/detail_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:text="地区生产总值>工业生产总值"
+            android:textColor="@color/gray"
+            android:textSize="18dip" />
+
+        <ImageButton
+            android:id="@+id/detail_first_changButton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/detail_changebutton_normal"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_region_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_first_layout"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/detail_region_OneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/detail_region_one_normal" />
+
+        <ImageButton
+            android:id="@+id/detail_region_TwoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/detail_region_two_normal" />
+
+        <ImageButton
+            android:id="@+id/detail_region_ThreeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/detail_region_three_normal" />
+
+        <ImageButton
+            android:id="@+id/detail_region_FourButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/detail_region_four_normal" />
+        
+        <ImageButton
+            android:id="@+id/detail_region_FiveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/detail_region_five_normal" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_region_layout_two"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_region_layout"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+        
+        <ImageButton
+            android:id="@+id/detail_region_SixButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/detail_region_six_normal" />
+
+        <ImageButton
+            android:id="@+id/detail_region_SevenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/detail_region_seven_normal" />
+
+        <ImageButton
+            android:id="@+id/detail_region_EightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/detail_region_eight_normal" />
+    </LinearLayout>
+
+    <!-- 中间动态加载View -->
+
+    <com.jiangbei.util.HVScrollView
+        android:id="@+id/detail_containerBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/detail_region_layout_two"
+        android:layout_marginBottom="75dip"
+        android:measureAllChildren="true" >
+    </com.jiangbei.util.HVScrollView>
+
+    <RelativeLayout
+        android:id="@+id/detail_explain_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/detail_explain_center"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/detail_explain_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dip"
+            android:layout_toLeftOf="@+id/detail_explain_center"
+            android:text="统计范围"
+            android:textColor="@color/gray"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/detail_explain_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dip"
+            android:layout_toLeftOf="@+id/detail_explain_two"
+            android:text="指标解释"
+            android:textColor="@color/gray"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/detail_explain_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@+id/detail_explain_center"
+            android:text="调查方法"
+            android:textColor="@color/gray"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/detail_explain_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dip"
+            android:layout_toRightOf="@+id/detail_explain_three"
+            android:text="建立依据"
+            android:textColor="@color/gray"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_buttom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_above="@+id/detail_explain_layout" >
+
+        <ImageButton
+            android:id="@+id/detail_buttom_ShareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/detail_share" />
+
+        <ImageButton
+            android:id="@+id/detail_buttom_CollectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:layout_toLeftOf="@+id/detail_buttom_ShareButton"
+            android:background="@drawable/detail_collect" />
+    </RelativeLayout>
+
+</RelativeLayout>

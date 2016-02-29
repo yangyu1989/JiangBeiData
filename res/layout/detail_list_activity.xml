@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/detail_list_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip">
+
+        <TextView
+            android:id="@+id/detail_form_header_one"
+            android:layout_width="90dip"
+            android:layout_height="75dip"
+            android:layout_marginLeft="5dip"
+            android:background="@color/gray"
+            android:gravity="center" 
+            android:textSize="18dip"
+            android:text="时间" />
+        
+        <TextView
+            android:id="@+id/detail_form_header_two"
+            android:layout_width="225dip"
+            android:layout_height="35dip"
+            android:layout_toRightOf="@+id/detail_form_header_one"
+            android:layout_marginLeft="5dip"
+            android:background="@color/lightskyblue"
+            android:gravity="center"  
+            android:textSize="18dip"
+            android:text="中马街道" />
+        
+        <TextView
+            android:id="@+id/detail_form_header_three"
+            android:layout_width="120dip"
+            android:layout_height="35dip"
+            android:layout_toRightOf="@+id/detail_form_header_one"
+            android:layout_below="@+id/detail_form_header_two"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/white"
+            android:gravity="center" 
+            android:textSize="18dip"
+            android:text="总量（万元）" />
+        
+        <TextView
+            android:id="@+id/detail_form_header_four"
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:layout_toRightOf="@+id/detail_form_header_three"
+            android:layout_below="@+id/detail_form_header_two"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/white"
+            android:gravity="center" 
+            android:textSize="18dip"
+            android:text="增速（%）" />
+        
+        
+    </RelativeLayout>
+
+    <TableLayout 
+        android:id="@+id/detail_list_tablelayut"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/lightgray" >
+
+        <!-- <TableRow >
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="35dip"
+                android:background="@color/gray"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center" 
+                android:textSize="18dip"
+                android:text="2015" />
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="35dip"
+                android:background="@color/white"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center" 
+                android:textSize="18dip"
+                android:text="1583247" />
+            
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="35dip"
+                android:background="@color/white"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center" 
+                android:textSize="18dip"
+                android:text="7.0" />
+        </TableRow>
+        
+        <TableRow >
+
+            <TextView
+                android:layout_width="90dip"
+                android:layout_height="35dip"
+                android:background="@color/gray"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center" 
+                android:textSize="18dip"
+                android:text="2014" />
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="35dip"
+                android:background="@color/white"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:textSize="18dip" 
+                android:text="1.22" />
+            
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="35dip"
+                android:background="@color/white"
+                android:layout_marginTop="5dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center" 
+                android:textSize="18dip"
+                android:text="6.5" />
+        </TableRow> -->
+
+    </TableLayout>
+
+
+</LinearLayout>

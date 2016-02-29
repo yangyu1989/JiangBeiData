@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:background="@color/lightgray"
+    android:id="@+id/news_list_item_layout" >
+
+
+    <TextView
+        android:id="@+id/new_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"  
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="指标名称 "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    
+     
+
+    <TextView
+        android:id="@+id/new_list_item_count"
+        android:layout_width="60dip"
+        android:layout_height="25dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="11.25%"
+        android:textColor="@color/black"
+        android:textSize="15sp" 
+        android:background="@color/red"/>
+    
+    <TextView
+        android:id="@+id/new_list_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="32dp"
+        android:layout_toLeftOf="@+id/new_list_item_count"
+        android:gravity="center"
+        android:text="绝对量"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+
+   
+    
+</RelativeLayout>

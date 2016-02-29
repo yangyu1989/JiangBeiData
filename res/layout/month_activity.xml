@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lightgray" >
+
+    <RelativeLayout
+        android:id="@+id/month_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_back"
+         >
+         <TextView
+        android:id="@+id/month_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="数据江北"
+        android:textColor="@color/white"
+        android:textSize="30dip" />
+
+         <ImageButton
+             android:id="@+id/month_title_SearchButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="20dip"
+             android:background="@drawable/search_button" />
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/month_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/month_title_layout" >
+    </ListView>
+
+</RelativeLayout>

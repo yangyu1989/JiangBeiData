@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@color/lightgray" >
+
+    <ImageView
+        android:id="@+id/month_list_resIds"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/month_list_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/month_list_resIds"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
